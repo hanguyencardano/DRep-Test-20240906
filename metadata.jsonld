@@ -1,0 +1,123 @@
+{
+  "@context": {
+    "@language": "en-us",
+    "CIP100": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#",
+    "CIP119": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0119/README.md#",
+    "hashAlgorithm": "CIP100:hashAlgorithm",
+    "body": {
+      "@id": "CIP119:body",
+      "@context": {
+        "bio": "CIP119:bio",
+        "doNotList": "CIP119:doNotList",
+        "email": "CIP119:email",
+        "givenName": "CIP119:givenName",
+        "motivations": "CIP119:motivations",
+        "objectives": "CIP119:objectives",
+        "paymentAddress": "CIP119:paymentAddress",
+        "qualifications": "CIP119:qualifications",
+        "image": {
+          "@id": "CIP119:image",
+          "@context": {
+            "ImageObject": "https://schema.org/ImageObject"
+          }
+        },
+        "references": {
+          "@id": "CIP119:references",
+          "@container": "@set",
+          "@context": {
+            "GovernanceMetadata": "CIP100:GovernanceMetadataReference",
+            "Other": "CIP100:OtherReference",
+            "label": "CIP100:reference-label",
+            "uri": "CIP100:reference-uri",
+            "referenceHash": {
+              "@id": "CIP119:referenceHash",
+              "@context": {
+                "hashDigest": "CIP119:hashDigest",
+                "hashAlgorithm": "CIP100:hashAlgorithm"
+              }
+            }
+          }
+        }
+      }
+    },
+    "authors": {
+      "@id": "CIP100:authors",
+      "@container": "@set",
+      "@context": {
+        "name": "http://xmlns.com/foaf/0.1/name",
+        "witness": {
+          "@id": "CIP100:witness",
+          "@context": {
+            "witnessAlgorithm": "CIP100:witnessAlgorithm",
+            "publicKey": "CIP100:publicKey",
+            "signature": "CIP100:signature"
+          }
+        }
+      }
+    }
+  },
+  "authors": [
+    {
+      "witness": {
+        "publicKey": {
+          "@value": "a4010103272006215820c28895d0be7e8434bd10e4f891070165acc7e1cac7872189a0b1ce0247e269fa"
+        },
+        "signature": {
+          "@value": "845846a201276761646472657373583901fffe55b28fc4fb7b4919b96edac42a7015daa183808f36b316f653b5329ae105bd12ad66ab124d5624eb6189c55ab41c7f3777cdfdd31241a166686173686564f458445665726966792044526570206472657031687a746c6163676b3776356e393664743367746737716665637539767878306c3874733271397635716775617a7a776634777a5840a1a148ca1e595e85c31e8b9623d7588d65552ee6e43ae80e64cd43deeb9bec3454b32195254b115e823fc45494ca2cceff1b7efb1f1af8928d99a21eff60c60b"
+        },
+        "witnessAlgorithm": {
+          "@value": "Ed25519"
+        }
+      }
+    }
+  ],
+  "hashAlgorithm": {
+    "@value": "blake2b-256"
+  },
+  "body": {
+    "bio": {
+      "@value": "I'm DRep Cardano. I  want to contribute to Cardano's decentralized governance."
+    },
+    "doNotList": {
+      "@value": "false"
+    },
+    "email": {
+      "@value": "marina@gmail.com"
+    },
+    "givenName": {
+      "@value": "Marina"
+    },
+    "motivations": {
+      "@value": "I believe in blockchain’s potential for transparency and fairness. As a Cardano Ambassador, I’m dedicated to growing the ecosystem, fostering an inclusive community, and bridging blockchain with businesses and academia. My certifications and experience reflect my commitment to this mission."
+    },
+    "objectives": {
+      "@value": "As a DRep for Cardano, my goals are to:\n\nVote fairly on proposals that benefit Cardano.\nSupport the DRep community in America.\nStrengthen the ADA-holder community and promote decentralized governance."
+    },
+    "paymentAddress": {
+      "@value": "addr1q8llu4dj3lz0k76frxukakky9fcptk4pswqg7d4nzmm98dfjntsst0gj44n2kyjd2cjwkcvfc4dtg8rlxamumlwnzfqsrxanm8"
+    },
+    "qualifications": {
+      "@value": "Catalyst Involvement:\n\nReviewer & Assessor: Evaluating proposals.\nCatalyst Co-Organizer: Encouraging collaboration.\nFunded Proposer: Secured funding for initiatives.\n\nCertifications:\nCardano Certified Associate (Cardano Foundation)"
+    },
+    "references": [
+      {
+        "@type": "Other",
+        "label": {
+          "@value": "My Twitter"
+        },
+        "uri": {
+          "@value": "https://x.com/marina"
+        }
+      },
+      {
+        "@type": "Other",
+        "label": {
+          "@value": "DRep Profile"
+        },
+        "uri": {
+          "@value": "https://marina.com"
+        }
+      }
+    ]
+  }
+}
